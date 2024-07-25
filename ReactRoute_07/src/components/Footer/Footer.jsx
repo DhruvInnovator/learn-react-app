@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-
+// import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
@@ -9,8 +9,8 @@ export default function Footer() {
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
                             <img
-                                src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-                                className="mr-3 h-16"
+                                src="https://img.freepik.com/premium-vector/orange-logo-template-vector-illustration-design_530822-297.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721001600&semt=ais_user"
+                                className="mr-3 h-36"
                                 alt="Logo"
                             />
                         </Link>
@@ -36,7 +36,7 @@ export default function Footer() {
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
                                     <a
-                                        href="https://github.com/hiteshchoudhary"
+                                        href="https://github.com/DhruvInnovator"
                                         className="hover:underline"
                                         target="_blank"
                                         rel="noreferrer"
@@ -72,8 +72,8 @@ export default function Footer() {
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="text-sm text-gray-500 sm:text-center">
                         © 2023
-                        <a href="https://hiteshchoudhary.com/" className="hover:underline">
-                            hiteshchoudhary
+                        <a href="https://dhruvnegi.tech/" className="hover:underline">
+                            Dhruv Negi
                         </a>
                         . All Rights Reserved.
                     </span>
@@ -160,5 +160,3 @@ export default function Footer() {
         </footer>
     );
 }
-
-
