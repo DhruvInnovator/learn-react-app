@@ -1,12 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-// import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './Layout'
 import Home from './components/Home/Home'
 import About from './components/About/About'
 import Contact from './components/Contact us/Contact'
+import User from './components/User/User'
+import Github from './components/Github/Github'
+// import Github, { gitHubInfoLoader } from './components/Github/Github'
 
 // Method 1
 const router = createBrowserRouter([
@@ -26,26 +28,17 @@ const router = createBrowserRouter([
         path : '/contact',
         element: <Contact />
       },
+      {
+        path : '/user/:UserId',
+        element: <User />
+      },
+      {
+        path : '/github',
+        element: <Github />,
+        // loader: {gitHubInfoLoader}
+      },
     ]}
 ])
-// Method 2
-//  const Router = createBrowserRouter(
-//   createRoutesFromElements(
-//   <Route 
-//     path = '/'
-//     Element = {<Layout/>}>
-//       <Route path='/'
-//         Element = {<Home/>}
-//       />
-//       <Route path='/about'
-//         Element = {<About/>}
-//       />
-//       <Route path='/contact'
-//         Element = {<Contact/>}
-//       />
-//   </Route>
-   
-//  ))
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
