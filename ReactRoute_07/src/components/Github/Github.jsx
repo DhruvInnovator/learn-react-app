@@ -26,7 +26,8 @@ function Github() {
          Github Public Repos :{ data.public_repos}
         </div>
       <img src={data.avatar_url} alt="git" width={300} className="flex item-center"/>
-      <h1 className="text-center">----My github profile</h1>
+      <h1 className="text-center">----My github profile
+      </h1>
     </div>
   )
 }
